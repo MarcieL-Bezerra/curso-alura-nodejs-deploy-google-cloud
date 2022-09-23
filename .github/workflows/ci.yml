@@ -1,0 +1,16 @@
+name: CI
+
+on: push
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - 
+    - name: Instalando as dependências
+      run: npm install
+      
+    - name: Executando os teste unitários
+      run: npm run test
